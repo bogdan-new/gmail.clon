@@ -1,0 +1,152 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+	.header{
+		width: 100%;
+		height: 70px;
+	   border: 2px solid black;
+	   display: flex;
+	   justify-content: space-between;
+	   align-items: center;
+	}
+	.gmail_logo{
+		height: 40px;
+		width: 160px;
+	}
+	.wrapper{
+		display: flex;
+		width: 500px;
+	}
+	.search{
+		width: 100%;
+		height: 50px;
+	   background: white;	
+		border: 2px solid gainsboro;
+		border-right: none;
+		border-radius: 40px 0 0 40px;
+	}
+	.button{
+		width: 64px;
+		height: 50px;
+		cursor: pointer;
+		border-radius: 0 40px 40px 0;
+	   background: white;
+	   border: 2px solid gainsboro;
+	   display: flex;
+	   align-items: center;
+	   justify-content: center;
+	}
+	.lupa{
+		width: 40px;
+		height: 40px;
+	}
+	.wrapper_2{
+		width: 20%;
+		display: flex;
+	}
+	.wrapper_3{
+		width: 20%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.burger-checkbox {
+		position: absolute;
+		visibility: hidden;
+	  }
+	  .burger {
+		position: relative;
+		z-index: 1;
+		cursor: pointer;
+		display: block;
+		position: relative;
+		border: none;
+		background: transparent;
+		width: 40px;
+		height: 26px;
+	  }
+	  .burger::before,
+	  .burger::after {
+		content: '';
+		left: 0;
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 4px;
+		border-radius: 10px;
+		background: #000;
+	  }
+	  .burger::before {
+		top: 0;
+		box-shadow: 0 11px 0 #000;
+		transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+	  }
+	  .burger::after {
+		bottom: 0;
+		transition: bottom .3s .15s, transform .3s;
+	  }
+	  .burger-checkbox:checked + .burger::before {
+		top: 11px;
+		transform: rotate(45deg);
+		box-shadow: 0 6px 0 rgba(0,0,0,0);
+		transition: box-shadow .15s, top .3s, transform .3s .15s;
+	  }
+	  .burger-checkbox:checked + .burger::after {
+		bottom: 11px;
+		transform: rotate(-45deg);
+		transition: bottom .3s, transform .3s .15s;
+	  }
+	  .menu-list {
+		top: 0;
+		left: 0;
+		position: absolute;
+		display: grid;
+		gap: 12px;
+		padding: 42px 0;
+		margin: 0;
+		background: grey;
+		list-style-type: none;
+		transform: translateX(-100%);
+		transition: .3s;
+		width: 200px;
+	  }
+	  .menu-item {
+		display: block;
+		padding: 8px;
+		color: white;
+		font-size: 18px;
+		text-align: center;
+		text-decoration: none;
+	  }
+	  .menu-item:hover {
+		background: rgba(255,255,255,.2)
+	  }
+	  .burger-checkbox:checked ~ .menu-list {
+		transform: translateX(0);
+	  }
+	  .wrapper_4{
+	width: 100%;
+	border: 1px solid black;
+	  }
+	.block_10{
+		width: 100%;
+		height:  60px;
+		border: 2px solid rgb(171, 168, 168);
+	}
+	.button_2{
+		width: 120px;
+		height: 50px;
+		background-color: lightblue;
+		border: 2px solid lightblue;
+		border-radius: 10px;
+		margin-top: 25px;
+		margin-left: 35px;
+	}
+.text_button{
+	display: block;
+		color: white;
+		font-size: 18px;
+		text-align: center;
+		text-decoration: none;
+	}
